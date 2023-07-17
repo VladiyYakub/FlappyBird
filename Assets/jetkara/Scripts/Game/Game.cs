@@ -9,14 +9,14 @@ public class Game : MonoBehaviour
 
     private void OnDisable()
     {
-        _startScreen.playNutttonClick += OnPlayButtonClick;
+        _startScreen.PlayButttonClick += OnPlayButtonClick;
         _gameOverScreen.RestartButtonClick += OnRestartButtonClick;
         _bird.GameOver += OnGameOver;
     }
 
     private void OnEnable()
     {
-        _startScreen.playNutttonClick -= OnPlayButtonClick;
+        _startScreen.PlayButttonClick -= OnPlayButtonClick;
         _gameOverScreen.RestartButtonClick -= OnRestartButtonClick;
         _bird.GameOver -= OnGameOver;
     }

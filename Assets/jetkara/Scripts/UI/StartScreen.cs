@@ -3,7 +3,7 @@ using UnityEngine.Events;
 
 public class StartScreen : Screen
 {
-    public UnityAction playNutttonClick;
+    public UnityAction PlayButttonClick;
 
     public override void Close()
     {
@@ -19,6 +19,6 @@ public class StartScreen : Screen
 
     protected override void OnButtonClick()
     {
-       playNutttonClick?.Invoke();
+       PlayButttonClick?.Invoke();
     }
 }
